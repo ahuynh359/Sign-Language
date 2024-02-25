@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">LearnSignLanguage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">356091898644-iojm1mth8s9e9o8idmja45snadmdbck0.apps.googleusercontent.com</string>
+    <string name="login_quote">For free, join now and start learning</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="or">Or</string>
+    <string name="not_you_member_sign_up"><b><font fgcolor='#656872'>Not you member?</font> <font fgcolor='#5B7BFE'>Signup</font></b></string>
+    <string name="email">Email</string>
+    <string name="home">Home</string>
+    <string name="learn">Learn</string>
+    <string name="game">Game</string>
+    <string name="setting">Setting</string>
+    <string name="learning_asl">Learning ASL</string>
+
+    <string name="alt_bottom_sheet_chevron">Bottom sheet expandable indicator</string>
+
+    <string name="alt_bottom_sheet_max_results_button_minus">Decreasing maximum classified results
+        button</string>
+    <string name="alt_bottom_sheet_max_results_button_plus">Increasing maximum classified results
+        button</string>
+    <string name="alt_bottom_sheet_threshold_button_minus">Decreasing threshold of classified image
+        results button</string>
+    <string name="alt_bottom_sheet_threshold_button_plus">Increasing threshold of classified image
+        results button</string>
+    <string name="alt_bottom_sheet_thread_button_minus">Decrease the number of threads used</string>
+    <string name="alt_bottom_sheet_thread_button_plus">Increase the number of threads used</string>
+
+    <string name="label_inference_time">Inference Time</string>
+    <string name="label_fps">Frames per Second</string>
+    <string name="label_confidence_threshold">Threshold</string>
+    <string name="label_max_results">Max Results</string>
+    <string name="label_threads">Number of Threads</string>
+    <string name="label_delegate">Delegate</string>
+    <string name="default_threshold">0.50</string>
+    <string name="default_inference_time">0ms</string>
+    <string name="default_max_results">3</string>
+    <string name="start_camera">Start Camera</string>
+    <string name="log_out">Log out</string>
+    <string name="logout">Logout</string>
+    <string name="submit">Submit</string>
+    <string name="pre"><![CDATA[< Pre]]></string>
+    <string name="next"><![CDATA[Next >]]></string>
+    <string name="click_to_play">Click to play</string>
+    <string name="_0_10">0 / 10</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="users">Users</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="send">Send</string>
+
+    <string-array name="delegate_spinner_titles">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+</resources>

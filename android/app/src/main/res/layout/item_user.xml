@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/_16dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_24dp"
+    android:background="@drawable/custom_tv"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imv_avatat"
+        android:src="@drawable/student"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="20sp"
+        tools:text="Anh Huynh Ngoc"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_cat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imv_avatat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/shuttle_gray_50"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:id="@+id/tv_cat"
+        tools:text="Student"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/shuttle_gray_50"
+        android:textSize="20sp"
+        android:id="@+id/tv_chat"
+        android:text=">"
+        app:layout_constraintBottom_toBottomOf="@id/imv_avatat"
+        app:layout_constraintTop_toTopOf="@id/imv_avatat"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="20dp"
+
+        android:layout_height="20dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

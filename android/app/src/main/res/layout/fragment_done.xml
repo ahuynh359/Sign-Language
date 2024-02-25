@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.DoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_marginTop="@dimen/_100dp"
+        android:id="@+id/imv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/congratulations_icon" />
+
+    <TextView
+        android:id="@+id/tv_congrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/congratulations"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv" />
+
+    <TextView
+        android:textColor="#888383"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fredoka_regular"
+        app:layout_constraintTop_toBottomOf="@id/tv_congrat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : " />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:tint="@color/white"
+        android:background="@drawable/custom_long_button"
+        app:srcCompat="@drawable/ic_replay"
+        android:id="@+id/btn_replay"
+        app:layout_constraintEnd_toStartOf="@id/btn_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_score"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:tint="@color/white"
+        android:id="@+id/btn_game"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_long_button"
+        app:srcCompat="@drawable/ic_game"
+        app:layout_constraintBottom_toBottomOf="@id/btn_replay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_replay"
+        app:layout_constraintTop_toTopOf="@id/btn_replay"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

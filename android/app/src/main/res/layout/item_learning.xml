@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="175dp"
+        android:layout_height="175dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_photo"
+            android:layout_marginTop="@dimen/_12dp"
+            android:src="@drawable/asl"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/_16sp"
+            android:layout_marginTop="@dimen/_50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            tools:text="ASL Language"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.GameFragment"
+        android:label="Game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_quizzFragment"
+            app:destination="@id/quizzFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.LearnFragment"
+        android:label="Learn"
+        tools:layout="@layout/fragment_learn">
+        <action
+            android:id="@+id/action_learnFragment_to_pdfPreviewFragment"
+            app:destination="@id/pdfPreviewFragment" />
+        <action
+            android:id="@+id/action_learnFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/pdfPreviewFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.PdfPreviewFragment"
+        android:label="PDF Preview"
+        tools:layout="@layout/fragment_pdf_preview" >
+        <argument
+            android:name="pdfPath"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.CameraFragment"
+        android:label="Camera" />
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.CardFragment"
+        android:label="Card"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/quizzFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.QuizzFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quizz" >
+        <action
+            android:id="@+id/action_quizzFragment_to_doneFragment"
+            app:destination="@id/doneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.DoneFragment"
+        android:label="Done"
+        tools:layout="@layout/fragment_done" >
+        <action
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_doneFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.UserFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.demo.learnsignlanguage.ui.fragment.ChatFragment"
+        android:label="Chat" />
+</navigation>

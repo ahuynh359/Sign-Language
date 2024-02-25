@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.fragment.LoginFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:src="@drawable/login"
+            app:layout_constraintBottom_toTopOf="@id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/MediumTitleTextView"
+            android:layout_width="@dimen/_263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:gravity="center"
+            android:text="@string/login_quote"
+            app:layout_constraintBottom_toTopOf="@id/til_email"
+            app:layout_constraintEnd_toEndOf="@id/imv_login"
+            app:layout_constraintStart_toStartOf="@id/imv_login"
+            app:layout_constraintTop_toBottomOf="@id/imv_login" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColorHint="@color/shuttle_gray_50"
+            app:layout_constraintBottom_toTopOf="@id/til_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                style="@style/CustomEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColorHint="@color/shuttle_gray_50"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            app:layout_constraintBottom_toTopOf="@id/tv_forgot_password"
+            app:layout_constraintEnd_toEndOf="@id/til_email"
+            app:layout_constraintStart_toStartOf="@id/til_email"
+            app:layout_constraintTop_toBottomOf="@id/til_email"
+            app:passwordToggleDrawable="@drawable/custom_eye_toggle"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                style="@style/CustomEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_forgot_password"
+            style="@style/RegularSmallTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textColor="@color/crimson"
+            app:layout_constraintBottom_toTopOf="@id/guiline_50"
+            app:layout_constraintStart_toStartOf="@id/til_password"
+            app:layout_constraintTop_toBottomOf="@id/til_password" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiline_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/CustomLongButton"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@id/til_email"
+            app:layout_constraintStart_toStartOf="@id/til_email"
+            app:layout_constraintTop_toTopOf="@id/guiline_50" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_forgot_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_forgot_password" />
+
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@drawable/custom_horizontal_line"
+            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintEnd_toStartOf="@id/tv_or"
+            app:layout_constraintStart_toStartOf="@id/til_email"
+            app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_or"
+            style="@style/RegularSmallTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/or"
+            app:layout_constraintEnd_toStartOf="@id/line_2"
+            app:layout_constraintStart_toEndOf="@id/line_1"
+            app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@drawable/custom_horizontal_line"
+            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintEnd_toEndOf="@id/til_email"
+            app:layout_constraintStart_toEndOf="@id/tv_or"
+            app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@drawable/custom_short_button"
+            android:src="@drawable/ic_fb"
+            app:layout_constraintEnd_toStartOf="@id/btn_gg"
+            app:layout_constraintStart_toStartOf="@id/til_email"
+            app:layout_constraintTop_toBottomOf="@+id/tv_or" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_gg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_short_button"
+            android:src="@drawable/ic_google"
+            app:layout_constraintBottom_toBottomOf="@id/btn_fb"
+            app:layout_constraintEnd_toEndOf="@id/til_email"
+            app:layout_constraintStart_toEndOf="@id/btn_fb"
+            app:layout_constraintTop_toTopOf="@id/btn_fb" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_not_member"
+            style="@style/RegularSmallTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/not_you_member_sign_up"
+            app:layout_constraintEnd_toEndOf="@id/til_email"
+            app:layout_constraintStart_toStartOf="@id/til_email"
+            app:layout_constraintTop_toBottomOf="@id/btn_fb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

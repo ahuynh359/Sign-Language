@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue_gem">#410FA3</color>
+    <color name="cornflower_blue">#5B7BFE</color>
+
+    <color name="shuttle_gray_50">#80656872</color>
+    <color name="ebony_5">#0D080E1E</color>
+    <color name="ebony_20">#330C0C1D</color>
+    <color name="ebony">#080E1E</color>
+    <color name="crimson">#D6185D</color>
+    <color name="mercury">#E7E7E7</color>
+
+    <!-- TF Branding Orange -->
+    <color name="bounding_box_color">#FF6F00</color>
+    <color name="toolbar_background">#EEEEEE</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="bottom_sheet_background">#EEEEEE</color>
+    <color name="bottom_sheet_text_color">@android:color/black</color>
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+    <color name="icPressed">#AAFFFFFF</color>
+    <color name="froly">#EE6C6C</color>
+    <color name="green">#00B5AE</color>
+
+
+</resources>
