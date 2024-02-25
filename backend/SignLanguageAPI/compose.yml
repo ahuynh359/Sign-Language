@@ -1,0 +1,23 @@
+
+services:
+  app:
+    image: hdnguyen7702/signlanguageapi:v1
+    container_name: signlanguageapi
+    ports:
+      - 8080:8080
+    restart: on-failure
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_HOST: mysql-container
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: 123456
+      MYSQL_DATABASE: signlanguage
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: signlanguage
