@@ -16,3 +16,6 @@ Tech : Docker, update later
 
 ## 3. AI
 Tech : Tensorflow, update later
+
+## Video Demo 🐞
+https://youtu.be/HbSv1aSCgKY
