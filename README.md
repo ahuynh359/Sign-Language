@@ -9,13 +9,13 @@ This is a basic app, which helps the deaf and mute to learn sign language
 - Play quiz game to memorize alphabet and number
 - Login and logout use firebase
 - Hard data for time used on the app
-Tech for Android App : Clean Architecture, MVVM , Navigation Graph, Retrofit, ViewModel , Dagger Hilt
+- Tech for Android App : Clean Architecture, MVVM , Navigation Graph, Retrofit, ViewModel , Dagger Hilt
 
 ## 2.Backend Java Spring Boot
-Tech : Docker, update later
+- Tech : Docker, update later
 
 ## 3. AI
-Tech : Tensorflow, update later
+- Tech : Tensorflow, update later
 
 ## Video Demo 🐞
 https://youtu.be/HbSv1aSCgKY
